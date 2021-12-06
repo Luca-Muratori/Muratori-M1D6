@@ -1,16 +1,26 @@
-/* EXERCISE 5
-   Write a function called onlyLetters which receives a string
-    as a parameter and returns it removing all the digits.
-   Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
+
+
+/* EXERCISE 6
+   Write a function called isThisAnEmail which receives a string
+ as a parameter and returns true if the string is a valid email address.
 */
 
-function onlyLetters(string){
-    
-    let withNoDigits = string.replace(/[0-9]/g, '');
-    
-    return withNoDigits
-    
-}
 
-let splitMeString = onlyLetters("I have 4 dogs")
-console.log(splitMeString)
+function isThisAnEmail(input) {
+
+    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+    if (input.match(validRegex)) {
+  
+      return("Valid email address!");
+
+    } else {
+  
+      return("Invalid email address!");
+
+    }
+  
+  }
+
+  const ValidateEmail =isThisAnEmail('luca.muratori')
+  console.log(ValidateEmail)
