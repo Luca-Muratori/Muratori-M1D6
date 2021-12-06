@@ -119,7 +119,7 @@ console.log(me)
          
         }
 
-/
+
 const randomDice=dice()
 console.log(randomDice)
     */
@@ -361,7 +361,17 @@ console.log(numberMovies)
 
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
-*/
+
+   function onlyTheTitles(input, field) {
+    let output = [];
+    for (var i=0; i < input.length ; ++i)
+        output.push(input[i][field]);
+    return output;
+}
+
+let result = onlyTheTitles(movies, "Title"); 
+console.log(result)
+    */
 
 /* EXERCISE 15
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
