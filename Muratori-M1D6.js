@@ -278,6 +278,15 @@ console.log(getNumberOfDays("1/1/2021", "1/2/2021"));
 
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
+
+    const isTodayMyBirthday=function(date){
+    return(date===12/01/1994)? console.log('Happy Birthday'): console.log('false')
+    }
+
+isTodayMyBirthday(12/01/1994)
+isTodayMyBirthday(11/01/1994)
+
+
 */
 
 // JS Arrays & Objects
