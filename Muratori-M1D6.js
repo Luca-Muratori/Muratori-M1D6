@@ -111,13 +111,15 @@ console.log(me)
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
 
-function dice(){
-    num=Math.round(Math.random()*6)
-        for (i = 1; i < 6; i++) {
-            num = Math.round(Math.random()*6)+1;
-        return num
+
+    function dice(){
+    
+        
+        return    Math.floor(Math.random()*6)+1;
+         
         }
-}
+
+/
 const randomDice=dice()
 console.log(randomDice)
     */
@@ -251,6 +253,36 @@ whatDayIsIt('11/29/2021')
         sum: 10
         values: [3, 3, 4]
     }
+
+    //function that generate a number between 1 and 6
+function dice(){
+    
+        
+        return    Math.floor(Math.random()*6)+1;
+         
+        }
+
+//const randomDice=dice()
+//console.log(randomDice)
+
+
+//function that generate an array with n random number, from 1 to 6, and make the sum of the different numbers
+const rollTheDices=(input)=>{
+let sum=0
+let arrayDice=[]
+
+for(i=0;i<input; i++){
+    const randomDice=dice();
+    sum+=randomDice
+    arrayDice.push(randomDice)
+
+}
+console.log(sum)
+console.log(arrayDice)
+}
+//console.log the result, like in the example
+
+rollTheDices(4)
 */
 
 /* EXERCISE 9
