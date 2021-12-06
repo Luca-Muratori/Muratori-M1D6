@@ -317,6 +317,14 @@ isTodayMyBirthday(11/01/1994)
 
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
+
+     function countMovies(){
+      return movies.length
+  }
+
+
+const numberMovies= countMovies(movies)
+console.log(numberMovies)
 */
 
 /* EXERCISE 14
