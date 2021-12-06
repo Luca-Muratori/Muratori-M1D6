@@ -142,7 +142,18 @@ console.log(results);
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
-*/
+
+    function splitMe(string){
+    const split_string = string.split(" ");
+    
+    return split_string
+    
+}
+
+let splitMeString = splitMe("I love coding")
+console.log(splitMeString)
+
+    */
 
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
