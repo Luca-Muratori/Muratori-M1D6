@@ -295,10 +295,24 @@ isTodayMyBirthday(11/01/1994)
 /* EXERCISE 11
    Write a function called deleteProp which receives an object and a string as parameters,
    and returns the given object after deleting its property named as the given string.
+
+   
 */
 
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
+
+    const oldestMovie=function(name){
+    let old = name[0];
+    for (let i = 1; i < name.length; i++) {
+        if (name[i].Year < old.Year) {
+            old = name[i];
+        }
+      }
+      return old;
+    };
+    
+    console.log(oldestMovie(movies));
 */
 
 /* EXERCISE 13
