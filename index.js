@@ -1,18 +1,14 @@
 
 
-/*EXERCISE C
-Create a variable called random and assign to it a random number 
-between 0 and 20 (it should be randomly created at each execution).*/
+/* EXERCISE D
+    Create a variable called me and assign to it an object 
+    containing the following information: name = your name, surname = your surname, age = your age.
+*/
 
-function casualNumber (){
-    num=Math.round(Math.random()*20)
-        for (i = 1; i < 20; i++) {
-            num = Math.round(Math.random()*20);
-    return num
-        }
+
+let me={
+    name: 'Luca',
+    surname='Muratori'
+    age='27'
+
 }
-const random=casualNumber()
-console.log(`You're thinking of ${random}`)
-
-
-
