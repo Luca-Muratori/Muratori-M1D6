@@ -1,7 +1,8 @@
-/* EXERCISE E
-    Write a piece of code for programmatically removing
-     the age property from the previously create object.
+/* EXERCISE F
+   Write a piece of code for programmatically adding to the me object you defined before 
+   an array called skills, containing the programming languages you know right now.
 */
+
 
 let me={
     name: 'Luca',
@@ -10,5 +11,8 @@ let me={
 
     }
 
-delete me.age
+//let programmingSkill=['HTML', 'CSS', 'using GitHub']
+
+me.programmingSkill=['HTML', 'CSS', 'using GitHub']
+
 console.log(me)
