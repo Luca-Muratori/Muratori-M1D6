@@ -1,8 +1,7 @@
-/* EXERCISE F
-   Write a piece of code for programmatically adding to the me object you defined before 
-   an array called skills, containing the programming languages you know right now.
+/* EXERCISE G
+   Write a piece of code for programmatically removing
+    the last skill from the skills array inside the me object.
 */
-
 
 let me={
     name: 'Luca',
@@ -11,8 +10,11 @@ let me={
 
     }
 
-//let programmingSkill=['HTML', 'CSS', 'using GitHub']
 
-me.programmingSkill=['HTML', 'CSS', 'using GitHub']
+    
+me.programmingSkill=['HTML', 'CSS', 'using GitHub'] //add an array
+
+delete me.programmingSkill[2]//removing the last item 
+
 
 console.log(me)
