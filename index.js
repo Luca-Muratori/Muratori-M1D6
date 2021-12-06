@@ -6,21 +6,23 @@
 */
 
 
-function isThisAnEmail(input) {
+const isThisAnEmail= function(input) {
 
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   
     if (input.match(validRegex)) {
   
-      return("Valid email address!");
+      console.log(`${input} is a valid email address!"`);
 
     } else {
   
-      return("Invalid email address!");
+        console.log(`${input} is an invalid email address!`);
 
     }
   
-  }
+  };
 
-  const ValidateEmail =isThisAnEmail('luca.muratori')
-  console.log(ValidateEmail)
+  isThisAnEmail('luca.muratoriotmail.it');
+  isThisAnEmail('luca.muratori@hotmail.it');
+ 
+  
