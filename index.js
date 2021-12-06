@@ -1,20 +1,14 @@
-/* EXERCISE G
-   Write a piece of code for programmatically removing
-    the last skill from the skills array inside the me object.
+/* EXERCISE 1
+    Write a function called dice; it should
+     randomize an integer number between 1 and 6.
 */
 
-let me={
-    name: 'Luca',
-    surname:'Muratori',
-    age:'27',
-
-    }
-
-
-    
-me.programmingSkill=['HTML', 'CSS', 'using GitHub'] //add an array
-
-delete me.programmingSkill[2]//removing the last item 
-
-
-console.log(me)
+function dice(){
+    num=Math.round(Math.random()*6)
+        for (i = 1; i < 6; i++) {
+            num = Math.round(Math.random()*6)+1;
+        return num
+        }
+}
+const randomDice=dice()
+console.log(randomDice)
